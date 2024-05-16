@@ -7,6 +7,9 @@
     --azul: #0077C0;
     --azulClaro: #C7EEFF;
     --grisClar0: #FAFAFA;
+    --verde: #17FF00;
+    --rojo: #FF0F00;
+    --marron: #4F2D00;
     --blanco: #ffffff;
     --negro: #000000;
 }
@@ -158,5 +161,60 @@ img{
     border: none;
     width: 10rem;
     border-radius: 1rem;
+}
+.btn-enviar:hover{
+    cursor: pointer;
+}
+/* Simulacion */
+.simulacion{
+    height: 50rem;
+    display: flex;
+    justify-content: space-between;
+}
+.bombillo{
+    height: 6rem;
+    width: 5rem;
+    border: solid 0.2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.base{
+    width: 5rem;
+    height: 3rem;
+    background-color: var(--negro);
+}
+.aprobado{
+    background-color: var(--verde);
+}
+.rechazado{
+    background-color: var(--rojo);
+}
+.cajas{
+    padding: 5rem;
+}
+.caja{
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--marron);
+    margin-right: 20px;
+    transition: transform 1s ease;
+}
+.estado{
+    display: flex;
+    flex-direction: column;
+    gap: 13.5rem;
+}
+.final{
+    width: 15rem;
+    height: 10rem;
+    border: solid 0.2rem var(--negro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.final p{
+    margin: 0;
 }
 

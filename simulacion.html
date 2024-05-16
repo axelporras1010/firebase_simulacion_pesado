@@ -29,7 +29,7 @@
     <!-- Container principal que contendra una simulacion del proceso luego de introducir datos a la base de datos -->
     <main class="container">
         <h2>Simulación del proceso</h2>
-        <form class="formulario" >
+        <form class="formulario">
             <div class="datos">
                 <div class="campo">
                     <label for="altura">Altura</label>
@@ -45,12 +45,39 @@
                 </div>
             </div>
             <div class="enviar">
-                <input class="btn-enviar" type="submit" value="Probar">
+                <button class="btn-enviar" type="button">Probar</button>
             </div>
         </form>
+
+        <!-- Animacion del proceso realizado para las cajas -->
+        <div class="simulacion">
+            <div class="proceso">
+                <div class="sensor-dimensiones">
+                    <div class="bombillo"></div>
+                    <div class="base"></div>
+                </div>
+                <div class="cajas">
+                    <div class="caja"></div>
+                </div>
+            </div>
+            <div class="estado">
+                <div class="final aceptado">
+                    <p>Aceptado</p>
+                </div>
+                <div class="final no-aceptado">
+                    <p>No aceptado</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <p>&copy; 2024 Automatización de procesos industriales. </p>
     </footer>
+    <!-- Firebase aplication -->
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-compat.js"></script>
+    <!-- Archivo JS con todos los componentes necesarios -->
+    <script src="/src/js/index.js"></script>
+    <script src="/src/js/app.js"></script>
 </body>
 </html>
