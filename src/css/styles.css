@@ -122,4 +122,41 @@ img{
     font-size: 3rem;
     font-weight: 700;
 }
+/* Formulario */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.datos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 100%;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+.campo label{
+    flex: 0 0 5rem;
+}
+.campo input{
+    flex: calc(1/2rem);
+    padding: calc(3rem/4);
+    border-radius: 1rem;
+}
+.enviar{
+    text-align: center;
+}
+.btn-enviar{
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 1.5rem;
+    border: none;
+    width: 10rem;
+    border-radius: 1rem;
+}
 
