@@ -20,6 +20,12 @@ function comprobar(){
             aprobado = true;
     }
 
+    firestoreDatabase(altura, ancho, peso, aprobado);
+
+    realtimeDatabase(altura, ancho, peso, aprobado);
+}
+
+function firestoreDatabase(altura, ancho, peso, aprobado){
     // Escritura en la base de datos
     db.collection("datos").add({
         altura: altura,
@@ -33,6 +39,20 @@ function comprobar(){
     })
     .catch(function(error) {
         console.error("Error al escribir en la base de datos: ", error);
+    });
+}
+
+function realtimeDatabase(altura, ancho, peso, aprobado) {
+    // Escribir en Realtime Database
+    database.ref('caja_valores').set({
+        altura: altura,
+        ancho: ancho,
+        peso: peso,
+        aprobado: aprobado
+    }).then(() => {
+        console.log('Datos escritos en Realtime Database');
+    }).catch((error) => {
+        console.error('Error al escribir en Realtime Database: ', error);
     });
 }
 

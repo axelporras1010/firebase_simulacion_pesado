@@ -12,4 +12,9 @@ const firebaseConfig = {
 
 // Inicializa Firebase
 firebase.initializeApp(firebaseConfig);
+
+//Inicializa la base de datos normal
 const db = firebase.firestore();
+
+// Inicializa Realtime Database
+const database = firebase.database();
