@@ -167,7 +167,7 @@ img{
 }
 /* Simulacion */
 .simulacion{
-    height: 50rem;
+    height: 40rem;
     display: flex;
     justify-content: space-between;
 }
@@ -216,5 +216,19 @@ img{
 }
 .final p{
     margin: 0;
+}
+/* Manometros */
+.valores {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+/* Estadisticas */
+.stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
 }
 
